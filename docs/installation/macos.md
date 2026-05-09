@@ -99,7 +99,16 @@ source ${HOME}/.venv/ISSM/bin/activate
 
 Then, use pip to install NumPy, SciPy, and dependencies,
 ````
-pip install matplotlib netcdf4 nose numpy pyshp scipy
+pip install matplotlib netcdf4 nose numpy pyshp scipy setuptools wheel
+````
+
+Alternatively, copy and paste the following to achieve all of the above,
+```sh
+sudo apt install python3-dev python3-minimal python3-pip python3-venv
+mkdir ${HOME}/.venv
+python3 -m venv ${HOME}/.venv/ISSM
+source ${HOME}/.venv/ISSM/bin/activate
+pip install matplotlib netcdf4 nose numpy pyshp scipy setuptools wheel
 ````
 
 ## External Packages
