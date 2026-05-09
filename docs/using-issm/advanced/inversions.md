@@ -173,3 +173,23 @@ To run an inversion, solve a stress balance solution with `md.inversion.iscontro
 ````
 
 ## References
+- Jean Charles Gilbert and Claude Lemarechal.
+ Some numerical experiments with variable-storage quasi-Newton
+   algorithms.
+ Math. Program., 45(1-3):407-435, 1989.
+
+- Todd Munson, Jason Sarich, Stefan Wild, Steven Benson, and Lois Curfman
+   McInnes.
+ TAO 2.0 Users Manual.
+ Technical Report ANL/MCS-TM-322, Mathematics and Computer Science
+   Division, Argonne National Laboratory, 2012.
+ http://www.mcs.anl.gov/tao.
+
+- Luigi Nardi, Charles Sorror, Fouad Badran, and Sylvie Thiria.
+ YAO: A Software for Variational Data Assimilation Using
+   Numerical Models.
+ In Osvaldo Gervasi, David Taniar, Beniamino Murgante, Antonio
+   Lagana, Youngsong Mun, and Marina L. Gavrilova, editors, LNCS 5593,
+   Computational Science and Its Applications - ICCSA 2009, pages 621-636.
+   Springer-Verlag, 2009.
+

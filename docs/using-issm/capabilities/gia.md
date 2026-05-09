@@ -138,3 +138,13 @@ The first argument is the model, the second is the nature of the simulation one 
 
 
 ## References
+- S. Adhikari, E. Ivins, E. Larour, H. Seroussi, M. Morlighem, and S. Nowicki.
+ Future Antarctic bed topography and its implications for ice sheet
+   dynamic.
+ Solid Earth, 5(1):569-584, 2014.
+
+- Erik R. Ivins and Thomas S. James.
+ Simple models for late Holocene and present-day Patagonian
+   glacier fluctuations and predictions of a geodetically detectable isostatic
+   response.
+ Geophys. J. Int., 138(3):601-624, 1999.

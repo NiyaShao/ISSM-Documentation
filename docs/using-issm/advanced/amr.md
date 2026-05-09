@@ -90,3 +90,12 @@ To ability the AMR process, one needs to define the AMR frequency in the transie
 
 
 ## References
+- Philippe Remy Bernard Devloo.
+ PZ: An object oriented environment for scientific programming.
+ Comput. Methods Appl. Mech. Eng., 150(1):133-153, 1997.
+ Symposium on Advances in Computational Mechanics.
+
+- F. Hecht.
+ BAMG: Bi-dimensional Anisotropic Mesh Generator.
+ Technical report, FreeFem++, 2006.
+

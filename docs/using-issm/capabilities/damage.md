@@ -79,3 +79,13 @@ A differential equation describing damage evolution in time&#8212;both the advec
 
 
 ## References
+- C. P. Borstad, A. Khazendar, E. Larour, M. Morlighem, E. Rignot, M. P.
+   Schodlok, and H. Seroussi.
+ A damage mechanics assessment of the Larsen B ice shelf prior to
+   collapse: Toward a physically-based calving law.
+ Geophys. Res. Lett., 39(L18502):1-5, 2012.
+
+- C. P. Borstad, E. Rignot, J. Mouginot, and M. P. Schodlok.
+ Creep deformation and buttressing capacity of damaged ice shelves:
+   theory and application to Larsen C ice shelf.
+ Cryosphere, 7:1931-1947, 2013.

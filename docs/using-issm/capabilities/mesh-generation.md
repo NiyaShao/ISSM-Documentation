@@ -87,3 +87,19 @@ The first argument is the model, as usual. The second argument is the number of 
 <div style="display:flow-root"><img style="float:left;width:100.00%" src="/ISSM-Documentation/assets/img/docs/using-issm/capabilities/mesh/extrusion.png" alt="Figure 2: extrusion"></div><span style="display:block;width:100%;text-align:center"><small>Extruded mesh</small></span>
 
 ## References
+- Pascal J. Frey.
+ Yams, A fully Automatic Adaptive Isotropic Surface Remeshing
+   Procedure.
+ Technical Report RT-0252, INRIA, Rocquencourt, 11 2001.
+
+- F. Hecht.
+ BAMG: Bi-dimensional Anisotropic Mesh Generator.
+ Technical report, FreeFem++, 2006.
+
+- Jonathan Richard Shewchuk.
+ Triangle: Engineering a 2D Quality Mesh Generator and
+   Delaunay Triangulator.
+ In Ming C. Lin and Dinesh Manocha, editors, Applied
+   Computational Geometry: Towards Geometric Engineering, volume 1148 of   Lecture Notes in Computer Science, pages 203-222. Springer-Verlag, May
+   1996.
+ From the First ACM Workshop on Applied Computational Geometry.

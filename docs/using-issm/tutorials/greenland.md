@@ -248,3 +248,62 @@ end
 
 
 ## References
+- J. E. Box, N. Cressie, D. H. Bromwich, J.-H. Jung, M. van den Broeke, J. H. van
+   Angelen, R. R. Forster, C. Miege, E. Mosley-Thompson, B. Vinther, and J. R.
+   McConnell.
+ Greenland Ice Sheet Mass Balance Reconstruction. Part
+   I: Net Snow Accumulation (1600-2009).
+ J. Clim., 26(11):3919-3934, JUN 2013.
+
+- Jason E. Box.
+ Greenland Ice Sheet Mass Balance Reconstruction. Part
+   II: Surface Mass Balance (1840-2010).
+ J. Clim., 26(18):6974-6989, SEP 2013.
+
+- Jason E. Box and William Colgan.
+ Greenland Ice Sheet Mass Balance Reconstruction. Part
+   III: Marine Ice Loss and Total Mass Balance (1840-2010).
+ J. Clim., 26(18):6990-7002, SEP 2013.
+
+- J. Ettema, M. R. van den Broeke, E. van Meijgaard, W. J. van de Berg, J. L.
+   Bamber, J. E. Box, and R. C. Bales.
+ Higher surface mass balance of the Greenland Ice Sheet revealed
+   by high-resolution climate modeling.
+ Geophys. Res. Lett., 36:1-5, JUN 16 2009.
+
+- S. Nowicki, R. A. Bindschadler, A. Abe-Ouchi, A. Aschwanden, E. Bueler,
+   H. Choi, J. Fastook, G. Granzow, R. Greve, G. Gutowski, U. Herzfeld,
+   C. Jackson, J. Johnson, C. Khroulev, E. Larour, A. Levermann, W. H. Lipscomb,
+   M. A. Martin, M. Morlighem, B. R. Parizek, D. Pollard, S. F. Price, D. Ren,
+   E. Rignot, F. Saito, T. Sato, H. Seddik, H. Seroussi, K. Takahashi,
+   R. Walker, and W. L. Wang.
+ Insights into spatial sensitivities of ice mass response to
+   environmental change from the SeaRISE ice sheet modeling project II:
+   Greenland.
+ J. Geophys. Res., 118:1-20, 2013.
+
+- W. T. Pfeffer, T. H. Illangasekare, and M. F. Meier.
+ Analysis and modeling of melt-water refreezing in dry snow.
+ J. Glaciol., 36(123):238-246, 1990.
+
+- W. T. Pfeffer, M. F. Meier, and T. H. Illangasekare.
+ Retention of Greenland Runoff by Refreezing: Implications
+   for Projected Future Sea-Level Rise.
+ J. Geophys. Res. - Oceans, 96(C12):22117-22124, DEC 15 1991.
+
+- J. H. van Angelen, M. R. van den Broeke, and W. J. van de Berg.
+ Momentum budget of the atmospheric boundary layer over the
+   Greenland ice sheet and its surrounding seas.
+ J. Geophys. Res. - Atmospheres, 116:1-14, MAY 18 2011.
+
+- Michiel van den Broeke, Jonathan Bamber, Janneke Ettema, Eric Rignot, Ernst
+   Schrama, Willem Jan van de Berg, Erik van Meijgaard, Isabella Velicogna, and
+   Bert Wouters.
+ Partitioning Recent Greenland Mass Loss.
+ Science, 326(5955):984-986, NOV 13 2009.
+
+- E. van Meijgaard, L. H. van Ulft, W. J. Van de Berg, F. C. Bosvelt, B. J. J. M.
+   Van den Hurk, G. Lenderink, and A. P. Siebesma.
+ The KNMI regional atmospheric model RACMO version 2.1, Technical
+   Report 302.
+ Technical report, KNMI, De Bilt, The Netherlands, 2008.

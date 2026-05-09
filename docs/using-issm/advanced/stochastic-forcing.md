@@ -112,3 +112,14 @@ For more details about StISSM, please refer to [<a href="#references">*Verjans20
 
 
 ## References
+- E. Rignot, Y. Xu, D. Menemenlis, J. Mouginot, B. Scheuchl, X. Li, M. Morlighem,
+   H. Seroussi, M. van den Broeke, I. Fenty, C. Cai, L. An, and B. de Fleurian.
+ Modeling of ocean-induced ice melt rates of five West Greenland
+   glaciers over the past two decades.
+ Geophys. Res. Lett., 43(12):6374-6382, JUN 28 2016.
+ 2016GL068784.
+
+- V. Verjans, A. A. Robel, H. Seroussi, L. Ultee, and A. F. Thompson.
+ The Stochastic Ice-Sheet and Sea-Level System Model v1.0 (StISSM
+   v1.0).
+ Geosci. Model Dev., 15(22):8269 - 8293, 2022.

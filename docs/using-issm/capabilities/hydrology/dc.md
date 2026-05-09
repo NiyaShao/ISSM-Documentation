@@ -150,3 +150,7 @@ Running a steady state simulation, is done with the following command:
 
 
 ## References
+- B. de Fleurian, O. Gagliardini, T. Zwinger, G. Durand, E. Le Meur, D. Mair, and
+   P. Raaback.
+ A double continuum hydrological model for glacier applications.
+ Cryosphere, 8(1):137-153, 2014.

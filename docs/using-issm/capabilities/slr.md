@@ -53,3 +53,8 @@ The first argument is the model, the second is the nature of the simulation one 
 
 
 ## References
+- S. Adhikari, E. R. Ivins, and E. Larour.
+ ISSM-SESAW v1.0: mesh-based computation of gravitationally
+   consistent sea-level and geodetic signatures caused by cryosphere and climate
+   driven mass change.
+ Geosci. Model Dev., 9(3):1087-1109, 2016.

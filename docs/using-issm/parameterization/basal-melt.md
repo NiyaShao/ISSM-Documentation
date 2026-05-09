@@ -72,3 +72,16 @@ To run a simulation, use the following command:
 
 
 ## References
+- W. M. J. Lazeroms, A. Jenkins, G. H. Gudmundsson, and R. S. W. van de Wal.
+ Modelling present-day basal melt rates for Antarctic ice shelves
+   using a parametrization of buoyant meltwater plumes.
+ Cryosphere, 12:49-70, 2018.
+
+- T. Pelle, M. Morlighem, and J. H. Bondzio.
+ Brief communication: PICOP, a new ocean melt parameterization under
+   ice shelves combining PICO and a plume model.
+ Cryosphere, 13(3):1043-1049, 2019.
+
+- R. Reese, T. Albrecht, M. Mengel, X. Asay-Davis, and R. Winkelmann.
+ Antarctic sub-shelf melt rates via PICO.
+ Cryosphere, 12:1969-1985, 2018.

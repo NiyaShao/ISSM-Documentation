@@ -145,3 +145,33 @@ Plot Sensitivity Results:
 
 
 ## References
+- Michael S. Eldred, Brian M. Adams, David M. Gay, Laura P. Swiler, Karen
+   Haskell, William J. Bohnhoff, John P. Eddy, William E. Hart, Jean-Paul
+   Watson, Patricia D. Hough, and Tammy G. Kolda.
+ DAKOTA, A Multilevel Parallel Object-Oriented Framework
+   for Design Optimization, Parameter Estimation, Uncertainty
+   Quantification, and Sensitivity Analysis, Version 4.2 User's
+   Manual, Technical Report SAND 2006-6337.
+ Technical report, Sandia National Laboratories, PO Box 5800,
+   Albuquerque, NM 87185, 2008.
+
+- E. Larour, M. Morlighem, H. Seroussi, J. Schiermeier, and E. Rignot.
+ Ice flow sensitivity to geothermal heat flux of Pine Island
+   Glacier, Antarctica.
+ J. Geophys. Res. - Earth Surface, 117(F04023):1-12, NOV 16
+   2012.
+
+- E. Larour, J. Schiermeier, E. Rignot, H. Seroussi, M. Morlighem, and J. Paden.
+ Sensitivity Analysis of Pine Island Glacier ice flow using
+   ISSM and DAKOTA.
+ J. Geophys. Res., 117, F02009:1-16, 2012.
+
+- N.-J. Schlegel, E. Larour, H. Seroussi, M. Morlighem, and J. E. Box.
+ Decadal-scale sensitivity of Northeast Greenland ice flow to
+   errors in surface mass balance using ISSM.
+ J. Geophys. Res. - Earth Surface, 118:1-14, 2013.
+
+- N.-J. Schlegel, E. Larour, H. Seroussi, M. Morlighem, and J. E. Box.
+ Ice discharge uncertainties in Northeast Greenland from boundary
+   conditions and climate forcing of an ice flow model.
+ J. Geophys. Res. - Earth Surface, 120(1):29-54, JAN 2015.

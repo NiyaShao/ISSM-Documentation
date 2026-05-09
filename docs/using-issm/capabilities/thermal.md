@@ -110,3 +110,14 @@ To run a thermal steady-state simulation  (i.e., $\partial T/\partial t = 0$), y
 >> md.timestepping.time_step = 0
 >> md = solve(md, 'Thermal');
 ````
+
+## References
+- A. Aschwanden, E. Bueler, C. Khroulev, and H. Blatter.
+ An enthalpy formulation for glaciers and ice sheets.
+ J. Glaciol., 58(209):441-457, 2012.
+
+- L. P. Franca, G. Hauke, and A. Masud.
+ Revisiting stabilized finite element methods for the
+   advective-diffusive equation.
+ Comput. Methods Appl. Mech. Engrg., 195(13-16):1560-1572,
+   2006.

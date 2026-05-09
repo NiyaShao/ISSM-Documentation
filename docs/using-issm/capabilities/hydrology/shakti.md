@@ -105,3 +105,7 @@ md = solve(md, 'Transient');
 
 
 ## References
+- A. Sommers, H. Rajaram, and M. Morlighem.
+ SHAKTI: Subglacial Hydrology and Kinetic, Transient Interactions
+   v1.0.
+ Geosci. Model Dev., 11(7):2955-2974, 2018.

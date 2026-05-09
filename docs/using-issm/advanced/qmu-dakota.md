@@ -193,3 +193,40 @@ The first argument is the model, the second is the nature of the simulation one 
 
 
 ## References
+- H. W. Coleman and W. G. Steele Jr.
+ Experimentation and Uncertainties Analysis for Engineers.
+ John Wiler, 1999.
+
+- Michael S. Eldred, Brian M. Adams, David M. Gay, Laura P. Swiler, Karen
+   Haskell, William J. Bohnhoff, John P. Eddy, William E. Hart, Jean-Paul
+   Watson, Patricia D. Hough, and Tammy G. Kolda.
+ DAKOTA, A Multilevel Parallel Object-Oriented Framework
+   for Design Optimization, Parameter Estimation, Uncertainty
+   Quantification, and Sensitivity Analysis, Version 4.2 User's
+   Manual, Technical Report SAND 2006-6337.
+ Technical report, Sandia National Laboratories, PO Box 5800,
+   Albuquerque, NM 87185, 2008.
+
+- B. Hendrickson and R. Leland.
+ The Chaco user's guide, version 2.0, Technical Report
+   SAND-95-2344.
+ Technical report, Sandia National Laboratories, Albuquerque, NM
+   87185-1110, 1995.
+
+- E. Larour, M. Morlighem, H. Seroussi, J. Schiermeier, and E. Rignot.
+ Ice flow sensitivity to geothermal heat flux of Pine Island
+   Glacier, Antarctica.
+ J. Geophys. Res. - Earth Surface, 117(F04023):1-12, NOV 16
+   2012.
+
+- E. Larour, J. Schiermeier, E. Rignot, H. Seroussi, M. Morlighem, and J. Paden.
+ Sensitivity Analysis of Pine Island Glacier ice flow using
+   ISSM and DAKOTA.
+ J. Geophys. Res., 117, F02009:1-16, 2012.
+
+- Laura P. Swiler and Gregory D. Wyss.
+ A User's Guide to Sandia's Latin Hypercube Sampling
+   Software: LHS UNIX Library/Standalone Version, Technical
+   Report SAND2004-2439.
+ Technical report, Sandia National Laboratories, PO Box 5800,
+   Albuquerque, NM 87185-0847, 2004.

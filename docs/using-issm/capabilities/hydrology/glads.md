@@ -136,3 +136,20 @@ md = solve(md, 'Transient');
 
 
 ## References
+- Ian J. Hewitt.
+ Modelling distributed and channelized subglacial drainage: the
+   spacing of channels.
+ J. Glaciol., 57(202):302-314, 2011.
+
+- J. F. Nye.
+ Water flow in glaciers: jokulhlaups, tunnels and veins.
+ J. Glaciol., 17(76):181-207, 1976.
+
+- H. Rothlisberger.
+ Water pressure in intra-and subglacial channels.
+ J. Glaciol., 11(62):177-203, 1972.
+
+- Mauro A. Werder, Ian J. Hewitt, Christian G. Schoof, and Gwenn E. Flowers.
+ Modeling channelized and distributed subglacial drainage in two
+   dimensions.
+ J. Geophys. Res., 118:1-19, 2013.

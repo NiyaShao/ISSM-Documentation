@@ -72,3 +72,8 @@ The gradients model can be selected by running:
 
 
 ## References
+- M. M. Helsen, R. S. W. van de Wal, M. R. van den Broeke, W. J. van de Berg, and
+   J. Oerlemans.
+ Coupling of climate models and ice sheet models by surface mass
+   balance gradients: application to the Greenland Ice Sheet.
+ Cryosphere, 6(2):255-272, 2012.

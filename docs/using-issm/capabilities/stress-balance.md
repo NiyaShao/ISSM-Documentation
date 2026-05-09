@@ -160,3 +160,21 @@ The first argument is the model, the second is the nature of the simulation one 
 
 
 ## References
+- H. Blatter.
+ Velocity And Stress-Fields In Grounded Glaciers: A Simple Algorithm
+   For Including Deviatoric Stress Gradients.
+ J. Glaciol., 41(138):333-344, 1995.
+
+- K. M. Cuffey and W. S. B. Paterson.
+ The Physics of Glaciers, 4th Edition.
+ Elsevier, Oxford, 2010.
+
+- J. W. Glen.
+ The creep of polycrystalline ice.
+ Proc. R. Soc. A, 228(1175):519-538, 1955.
+
+- L. W. Morland.
+ Unconfined ice shelf flow.
+ Proceedings of Workshop on the Dynamics of the West Antarctic
+   Ice Sheet, University of Utrecht, May 1985. Published by Reidel, ed. C.J.
+   van der Veen and J. Oerlemans:99-116, 1987.

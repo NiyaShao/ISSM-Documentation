@@ -154,3 +154,19 @@ following references: [<a href="#references">*Sommers2018,Sommers2023,Sommers202
 
 
 ## References
+- A. Sommers, H. Rajaram, and M. Morlighem.
+ SHAKTI: Subglacial Hydrology and Kinetic, Transient Interactions
+   v1.0.
+ Geosci. Model Dev., 11(7):2955-2974, 2018.
+
+- A. N. Sommers, C. R. Meyer, K. Poinar, J. Mejia, M. Morlighem, H. Rajaram,
+   K. L. P. Warburton, and W. Chu.
+ Velocity of Greenland's Helheim Glacier Controlled Both by Terminus
+   Effects and Subglacial Hydrology With Distinct Realms of Influence.
+ Geophys. Res. Lett., 51(15):e2024GL109168, 2024.
+
+- Aleah Sommers, Colin Meyer, Mathieu Morlighem, Harihar Rajaram, Kristin Poinar,
+   Winnie Chu, and Jessica Mejia.
+ Subglacial hydrology modeling predicts high winter water pressure
+   and spatially variable transmissivity at Helheim Glacier, Greenland.
+ J. Glaciol., page 1–13, 2023.

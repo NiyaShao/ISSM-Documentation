@@ -1,7 +1,7 @@
 ---
 title: About ISSM
 layout: default
-nav_order: 1
+nav_order: 2
 has_toc: false
 ---
 
@@ -9,10 +9,6 @@ has_toc: false
 - <a href="https://github.com/ISSMteam/ISSM/graphs/contributors" target="_top">Contributors</a>
 - <a href="./publications" target="_top">Publications</a>
 - <a href="./development-status" target="_top">Development Status</a>
-- <a href="./news" target="_top">News</a>
-{% comment %}
-- <a href="./collaborations" target="_top">Collaborations</a>
-{% endcomment %}
 
 ----
 
@@ -21,7 +17,7 @@ ISSM is currently funded (or has been funded in the past) by
 - NASA (Cryosphere Science Program, Modeling Analysis and Prediction Program)
 - The National Science Foundation (NSF)
 - Heising Simons Foundation (HSF)
-- <a href="https://icefuture.org/cluster-page/">Dartmouth's Changing Polar Regions</a> Academic clusuer
+- <a href="https://icefuture.org/cluster-page/">Dartmouth's Changing Polar Regions</a> Academic cluster
 - Novo Nordisk Foundation
 - JPL R&TD (Research and Technology Development)
 

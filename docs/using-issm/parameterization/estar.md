@@ -82,3 +82,21 @@ in which <img src="https://latex.codecogs.com/svg.latex?B" alt="Equation 38"> is
 
 
 ## References
+- William F. Budd, Roland C. Warner, T. H. Jacka, Jun Li, and Adam Treverrow.
+ Ice flow relations for stress and strain-rate components from
+   combined shear and compression laboratory experiments.
+ J. Glaciol., 59(214):374-392, 2013.
+
+- K. M. Cuffey and W. S. B. Paterson.
+ The Physics of Glaciers, 4th Edition.
+ Elsevier, Oxford, 2010.
+
+- F. S. Graham, M. Morlighem, R. C. Warner, and A. Treverrow.
+ Implementing an empirical scalar constitutive relation for ice with
+   flow-induced polycrystalline anisotropy in large-scale ice sheet models.
+ Cryosphere, 12(3):1047-1067, 2018.
+
+- Adam Treverrow, William F. Budd, Tim H. Jacka, and Roland C. Warner.
+ The tertiary creep of polycrystalline ice: experimental evidence for
+   stress-dependent levels of strain-rate enhancement.
+ J. Glaciol., 58(208):301–314, 2012.

@@ -18,78 +18,6 @@
 	background-color: red;
 }
 
-.contributors {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	padding-left: unset !important;
-
-	> li {
-		&::before {
-			display: none;
-			content: none;
-		}
-
-		width: 200px;
-		height: 260px;
-		margin: auto;
-		
-		img {
-			width: 100%;
-			height: 200px;
-		}
-
-		img, span {
-			display: block;
-		}
-	}
-}
-
-.post-index {
-	padding-left: unset !important;
-
-	&.home-page-post-index {
-		> li {
-			margin: 0 auto;
-			width: 100%;
-			max-width: 320px;
-
-			img {
-				width: 100%;
-				height: auto;
-			}
-
-			> div {
-
-			}
-		}
-	}
-
-	&.news-page-post-index {
-		> li {
-			img {
-				width: 100%;
-				height: auto;
-			}
-
-			> div {
-
-			}
-		}
-	}
-
-	> li {
-		&::before {
-			display: none;
-			content: none;
-		}
-
-		.post-excerpt {
-			margin-top: 0;
-		}
-	}
-}
-
 /*
 	Code block styling
 */
@@ -110,34 +38,4 @@
 .language-py {
 	background-color: #f0fff4 !important; // Light greenish
 	color: #1a1a1a;
-}
-
-/*
-	Sidebar expanded
-*/
-@media (min-width: 800px) {
-	.post-index {
-		&.home-page-post-index {
-			> li {
-				@include clearfix;
-
-				margin: unset;
-				max-width: unset;
-
-				img, > div {
-					float: left;
-				}
-
-				img {
-					width: 31%;
-					height: auto;
-				}
-
-				> div {
-					margin-left: 3%;
-					width: 66%;
-				}
-			}
-		}
-	}
 }

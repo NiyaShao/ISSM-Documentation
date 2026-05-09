@@ -33,6 +33,12 @@ export PATH="/opt/homebrew/opt/ruby/bin:${PATH}"
 ```
 then start a new terminal and follow the above steps.
 
+If your packages are out of date, you can generally update them with,
+```
+gem install bundler
+bundle update
+```
+
 ## Structure
 Each page in the [front end of the documentation](https://issmteam.github.io/ISSM-Documentation/) has a corresponding Markdown file (`.md`) in the appropriate subdirectory of `docs/`. For example,
 ````
