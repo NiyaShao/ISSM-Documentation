@@ -83,7 +83,6 @@ Installing ISSM on Andes
 Andes will only be used to run the code, you will use your local machine for pre and post-processing, you will never use Andes's MATLAB. You can check out ISSM and install the following packages:
 
 - PETSc 3.23 (use the andes script, `install-3.23-andes.sh`)
-- m1qn3
 
 Use the following configuration script (adapt to your needs):
 
@@ -96,7 +95,6 @@ export CXXFLAGS="-g -O3 -std=c++11 -fp-model=precise"
    --prefix=$ISSM_DIR \
    --with-wrappers=no \
    --with-petsc-dir="$ISSM_DIR/externalpackages/petsc/install" \
-   --with-m1qn3-dir="$ISSM_DIR/externalpackages/m1qn3/install" \
    --with-mpi-include="$ISSM_DIR/externalpackages/petsc/install/include" \
    --with-mpi-libflags="-L$ISSM_DIR/externalpackages/petsc/install/lib -lmpi -lmpifort -lifcore"\
    --with-metis-dir="$ISSM_DIR/externalpackages/petsc/install" \
@@ -135,7 +133,6 @@ export LDFLAGS="-L/optnfs/common/intel/compilers_and_libraries_2023.2.0/compiler
    --without-kriging \
    --without-Love \
    --without-Sealevelchange \
-   --with-m1qn3-dir="$ISSM_DIR/externalpackages/m1qn3/install" \
    --with-mpi-include="$ISSM_DIR/externalpackages/petsc/install/include" \
    --with-mpi-libflags="-L$ISSM_DIR/externalpackages/petsc/install/lib -lmpi -lmpifort"\
    --with-petsc-dir="$ISSM_DIR/externalpackages/petsc/install" \

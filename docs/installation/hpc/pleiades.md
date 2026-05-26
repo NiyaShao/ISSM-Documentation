@@ -98,8 +98,6 @@ For an installation of ISSM with basic capabilities, the only external packages 
 ```sh
 autotools	install-linux.sh
 triangle	install-linux.sh
-m1qn3		install-linux.sh
-semic		install.sh
 ```
 
 Before configuring ISSM, run,
@@ -128,9 +126,7 @@ export CXXFLAGS="-g -Ofast -xCORE-AVX512,CORE-AVX2 -xAVX -std=c++11"
 	--with-scalapack-lib="-L${COMP_INTEL_ROOT}/mkl/lib/intel64/libmkl_scalapack_lp64.so" \
 	--with-mumps-dir="${PETSC_DIR}" \
 	--with-petsc-dir="${PETSC_DIR}" \
-	--with-triangle-dir="${ISSM_DIR}/externalpackages/triangle/install" \
-	--with-m1qn3-dir="${ISSM_DIR}/externalpackages/m1qn3/install" \
-	--with-semic-dir="${ISSM_DIR}/externalpackages/semic/install"
+	--with-triangle-dir="${ISSM_DIR}/externalpackages/triangle/install"
 ```
 
 ### Installing ISSM with Dakota
@@ -141,8 +137,6 @@ boost		install-1.7-linux.sh
 dakota		install-6.2-pleiades.sh
 chaco		install-linux.sh
 triangle	install-linux.shwhic
-m1qn3		install-linux.sh
-semic		install.sh
 ```
 
 Before configuring ISSM, run,
@@ -174,9 +168,7 @@ export CXXFLAGS="-g -Ofast -xCORE-AVX512,CORE-AVX2 -xAVX -std=c++11"
 	--with-boost-dir="${ISSM_DIR}/externalpackages/boost/install" \
 	--with-dakota-dir="${ISSM_DIR}/externalpackages/dakota/install" \
 	--with-chaco-dir="${ISSM_DIR}/externalpackages/chaco/install" \
-	--with-triangle-dir="${ISSM_DIR}/externalpackages/triangle/install" \
-	--with-m1qn3-dir="${ISSM_DIR}/externalpackages/m1qn3/install" \
-	--with-semic-dir="${ISSM_DIR}/externalpackages/semic/install"
+	--with-triangle-dir="${ISSM_DIR}/externalpackages/triangle/install" 
 ```
 
 ### Installing ISSM with Solid Earth Capabilities
@@ -196,8 +188,6 @@ gshhg		install.sh
 gmt			install-6-pleiades.sh
 gmsh		install-4-pleiades.sh
 triangle	install-linux.sh
-m1qn3		install-linux.sh
-semic		install.sh
 ```
 
 Before configuring ISSM, run,
@@ -231,9 +221,7 @@ export CXXFLAGS="-g -Ofast -xCORE-AVX512,CORE-AVX2 -xAVX -std=c++11"
 	--with-dakota-dir="${ISSM_DIR}/externalpackages/dakota/install" \
 	--with-chaco-dir="${ISSM_DIR}/externalpackages/chaco/install" \
 	--with-proj-dir="${ISSM_DIR}/externalpackages/proj/install" \
-	--with-triangle-dir="${ISSM_DIR}/externalpackages/triangle/install" \
-	--with-m1qn3-dir="${ISSM_DIR}/externalpackages/m1qn3/install" \
-	--with-semic-dir="${ISSM_DIR}/externalpackages/semic/install"
+	--with-triangle-dir="${ISSM_DIR}/externalpackages/triangle/install"
 ```
 
 ### Installing ISSM with CoDiPack

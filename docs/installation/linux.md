@@ -124,7 +124,6 @@ autotools		install-linux.sh
 cmake			install.sh
 petsc			install-3.22-linux.sh
 triangle		install-linux.sh
-m1qn3			install.sh
 ````
 
 {: .highlight-title }
@@ -163,8 +162,7 @@ Next, create a configuration file called `configure.sh` in `${ISSM_DIR}`. Its co
 	--with-scalapack-dir="${ISSM_DIR}/externalpackages/petsc/install" \
 	--with-mumps-dir="${ISSM_DIR}/externalpackages/petsc/install" \
 	--with-petsc-dir="${ISSM_DIR}/externalpackages/petsc/install" \
-	--with-triangle-dir="${ISSM_DIR}/externalpackages/triangle/install" \
-	--with-m1qn3-dir="${ISSM_DIR}/externalpackages/m1qn3/install"
+	--with-triangle-dir="${ISSM_DIR}/externalpackages/triangle/install"
 ```
 where `<MATLAB_PATH>` is the path to the MATLAB installation that you wish to use (e.g. `/usr/local/MATLAB/R2024a`).
 
@@ -182,8 +180,7 @@ where `<MATLAB_PATH>` is the path to the MATLAB installation that you wish to us
 	--with-scalapack-dir="${ISSM_DIR}/externalpackages/petsc/install" \
 	--with-mumps-dir="${ISSM_DIR}/externalpackages/petsc/install" \
 	--with-petsc-dir="${ISSM_DIR}/externalpackages/petsc/install" \
-	--with-triangle-dir="${ISSM_DIR}/externalpackages/triangle/install" \
-	--with-m1qn3-dir="${ISSM_DIR}/externalpackages/m1qn3/install"
+	--with-triangle-dir="${ISSM_DIR}/externalpackages/triangle/install"
 ```
 
 Again, you might need to make adjustments to the above configurations based on your system and needs. We have a number of resources to help here:

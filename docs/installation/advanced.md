@@ -133,7 +133,6 @@ export CXXFLAGS="-g -O3 -fPIC -std=c++11 -DCODI_ForcedInlines"
 	--with-mumps-dir=${ISSM_DIR}/externalpackages/petsc/install \
 	--with-gsl-dir=${ISSM_DIR}/externalpackages/gsl/install \
 	--with-triangle-dir=$ISSM_DIR/externalpackages/triangle/install \
-	--with-m1qn3-dir="$ISSM_DIR/externalpackages/m1qn3/install" \
 	--with-codipack-dir="$ISSM_DIR/externalpackages/codipack/install" \
 	--with-medipack-dir="$ISSM_DIR/externalpackages/medipack/install"
 ````
@@ -180,7 +179,6 @@ ISSM's kriging capability. The following is an example configuration script:
 	--with-mumps-dir=${ISSM_DIR}/externalpackages/petsc/install \
 	--with-gsl-dir=${ISSM_DIR}/externalpackages/gsl/install \
 	--with-triangle-dir=$ISSM_DIR/externalpackages/triangle/install \
-	--with-m1qn3-dir="$ISSM_DIR/externalpackages/m1qn3/install" \
 	--with-adolc-dir=$ISSM_DIR/externalpackages/adolc/install \
 	--with-ampi-dir=$ISSM_DIR/externalpackages/adjoinablempi/install
 ````
