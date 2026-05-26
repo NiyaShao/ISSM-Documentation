@@ -271,7 +271,7 @@ export CXXFLAGS="-g -Ofast -xCORE-AVX512,CORE-AVX2 -xAVX -std=c++11"
 
 ## pfe_settings
 You will have to add a file titled `pfe_settings.m` (or `pfe_settings.py`) in `$ISSM_DIR/src/m` on the machine that you are doing model setup and results analysis on. This file will set up your personal settings so that that machine can send solution requests to Pleiades and retrieve results. For example, this file might include,
-```
+```matlab
 cluster.login='mmorligh';
 cluster.queue='devel';
 cluster.codepath='/nobackup/mmorligh/ISSM/bin';

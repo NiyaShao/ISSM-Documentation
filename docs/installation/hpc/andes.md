@@ -153,7 +153,7 @@ export LDFLAGS="-L/optnfs/common/intel/compilers_and_libraries_2023.2.0/compiler
 ## andes_settings.m
 You have to add a file in `$ISSM_DIR/src/m` entitled `andes_settings.m` with your personal settings on your local ism install:
 
-```sph
+```matlab
 cluster.login='yourNetID';
 cluster.codepath='/dartfs/rc/lab/I/ICE/yourpath/trunk-jpl/bin/';
 cluster.executionpath='/dartfs/rc/lab/I/ICE/yourpath/trunk-jpl/execution/';
