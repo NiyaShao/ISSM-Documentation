@@ -1,5 +1,5 @@
 ---
-title: Pine Island Glacier Stochastic Forcing (StISSM)
+title: Pig StISSM
 layout: default
 parent: Tutorials
 ---
@@ -20,7 +20,7 @@ The main goals of this tutorial are 1) to become familiar with the use of StISSM
 - Step 5: Transient run
 - Step 6: Set up the stochastic calving parameterization
 - Step 7: Second transient run starting from the results of the first one
-Files needed for this tutorial can be found in `trunk/examples/StISSM/`. The `runme.m` file contains the structure of the overall simulation, while the .par file includes most parameters needed for the model setup. The `.exp` files are domain files that define geometric boundaries of the simulation. Observed datasets needed for the parameterization also need to be 
+Files needed for this tutorial can be found in `ISSM/examples/StISSM/`. The `runme.m` file contains the structure of the overall simulation, while the .par file includes most parameters needed for the model setup. The `.exp` files are domain files that define geometric boundaries of the simulation. Observed datasets needed for the parameterization also need to be 
  <a href="datasets">downloaded</a>.
 
 ### Mesh

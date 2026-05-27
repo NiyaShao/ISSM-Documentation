@@ -413,3 +413,7 @@ plotmodel(md, 'axis#all', 'tight', 'data', md.results.StressbalanceSolution.Fric
 
 
 ## References
+- D. R. MacAyeal.
+ A tutorial on the use of control methods in ice-sheet modeling.
+ J. Glaciol., 39(131):91-98, 1993.
+

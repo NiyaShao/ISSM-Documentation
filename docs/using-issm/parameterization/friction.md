@@ -160,3 +160,46 @@ One can display all these fields by running:
 
 
 ## References
+- W. F. Budd, P. L. Keage, and N. A. Blundy.
+ Empirical studies of ice sliding.
+ J. Glaciol., 23:157-170, 1979.
+
+- S. L. Cornford, H. Seroussi, X. S. Asay-Davis, G. H. Gudmundsson, R. Arthern,
+   C. Borstad, J. Christmann, T. Dias dos Santos, J. Feldmann, D. Goldberg,
+   M. J. Hoffman, A. Humbert, T. Kleiner, G. Leguy, W. H. Lipscomb, N. Merino,
+   G. Durand, M. Morlighem, D. Pollard, M. Ruckamp, C. R. Williams, and H. Yu.
+ Results of the third Marine Ice Sheet Model Intercomparison Project
+   (MISMIP+).
+ Cryosphere, 14(7):2283-2301, 2020.
+
+- O. Gagliardini, D. Cohen, P. Raback, and T. Zwinger.
+ Finite-element modeling of subglacial cavities and related friction
+   law.
+ J. Geophys. Res. - Earth Surface, 112(F2):1-11, MAY 31 2007.
+
+- Christian Helanow, Neal R. Iverson, Jacob B. Woodard, and Lucas K. Zoet.
+ A slip law for hard-bedded glaciers derived from observed bed
+   topography.
+ Sci. Adv., 7(20):eabe7798, 2021.
+
+- I. Joughin, B. E. Smith, and C. G. Schoof.
+ Regularized Coulomb friction laws for ice sheet sliding: Application
+   to Pine Island Glacier, Antarctica.
+ Geophys. Res. Lett., 46, 2019.
+
+- W. S. B. Paterson.
+ The Physics of Glaciers.
+ Pergamon Press, Oxford, London, New York, 3rd edition, 1994.
+
+- C. Schoof.
+ The effect of cavitation on glacier sliding.
+ Proc. R. Soc. A, 461(2055):609-627, MAR 8 2005.
+
+- V. C. Tsai, A. L. Stewart, and A. F. Thompson.
+ Marine ice-sheet profiles and stability under Coulomb basal
+   conditions.
+ J. Glaciol., 61(226):205-215, 2015.
+
+- J. Weertman.
+ On the sliding of glaciers.
+ J. Glaciol., 3:33-38, March 1957.

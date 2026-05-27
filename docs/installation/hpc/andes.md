@@ -1,10 +1,10 @@
 ---
-title: Andes (Dartmouth RC)
+title: Andes
 layout: default
-parent: High-Performance Computing (HPC)
+parent: HPC
 ---
 
-# Andes (Dartmouth RC)
+# Andes (Dartmouth Research Computing)
 {: .no_toc }
 
 ## Table of Contents
@@ -40,6 +40,7 @@ ssh andes
 
 ## Password-less ssh
 
+### Generic Security Services Application Programming Interface (GSSAPI)
 Andes officially suggests using GSSAPI for passwordless access, see ​here.
 
 On your local machine, you will need to enter:
@@ -48,13 +49,15 @@ kinit -f -l 7d username@KIEWIT.DARTMOUTH.EDU
 ```
 with your NetID at username and the password for NetID to request a ticket for 7 days (or any time period you need), then you can use ssh andes without entering a password.
 
-If you can't log in anymore (or if you get weird error messages saying that permissions to access your home directory are denied), you will need to destroy all active Kerberos authorization tickets. To do this:
-
-- Connect to discovery8: ```ssh NetID@discovery8.dartmouth.edu```
-- Once on discovery8 (even with the error thrown), do: ```kdestroy -A```
-- exit out of discovery8, go back to your ```~/.ssh/config``` and comment out the GSSAPI lines with a ```#```
+### Troubleshooting
+If you can't log in anymore (or if you get an error message about wrong permission for your home directory), you will need to destroy all active Kerberos authorization tickets. To do this:
+- Connect to andes: ```ssh NetID@andes8.dartmouth.edu```
+- Once on andes (even with the error thrown), do: ```kdestroy -A```
+- exit out of andes, go back to your ```~/.ssh/config``` and comment out the GSSAPI lines with a ```#```
 - on your computer (or totten, whichever you're using) run: ```kdestroy -A```
-- Now try to ```ssh``` into discovery8 again with your password and it should work!
+- Now try to ```ssh``` into andes8 again with your password and it should work!
+
+In some instances, the return key produces `^M` and the password cannot be entered. If this happens, use the following command `stty sane`.
 
 ## Environment
 On Andes, add the following lines to ```~/.bashrc```:
@@ -65,7 +68,7 @@ source $ISSM_DIR/etc/environment.sh
 
 #load modules
 module purge
-module load module load cmake/3.23.2
+module load cmake/3.23.2
 module load intel-compilers/23.2
 module load mkl/19.3
 ```
@@ -93,7 +96,6 @@ export CXXFLAGS="-g -O3 -std=c++11 -fp-model=precise"
    --prefix=$ISSM_DIR \
    --with-wrappers=no \
    --with-petsc-dir="$ISSM_DIR/externalpackages/petsc/install" \
-   --with-m1qn3-dir="$ISSM_DIR/externalpackages/m1qn3/install" \
    --with-mpi-include="$ISSM_DIR/externalpackages/petsc/install/include" \
    --with-mpi-libflags="-L$ISSM_DIR/externalpackages/petsc/install/lib -lmpi -lmpifort -lifcore"\
    --with-metis-dir="$ISSM_DIR/externalpackages/petsc/install" \
@@ -132,7 +134,6 @@ export LDFLAGS="-L/optnfs/common/intel/compilers_and_libraries_2023.2.0/compiler
    --without-kriging \
    --without-Love \
    --without-Sealevelchange \
-   --with-m1qn3-dir="$ISSM_DIR/externalpackages/m1qn3/install" \
    --with-mpi-include="$ISSM_DIR/externalpackages/petsc/install/include" \
    --with-mpi-libflags="-L$ISSM_DIR/externalpackages/petsc/install/lib -lmpi -lmpifort"\
    --with-petsc-dir="$ISSM_DIR/externalpackages/petsc/install" \
@@ -151,12 +152,12 @@ export LDFLAGS="-L/optnfs/common/intel/compilers_and_libraries_2023.2.0/compiler
 ```
 
 ## andes_settings.m
-You have to add a file in `$ISSM_DIR/src/m` entitled `andes_settings.m` with your personal settings on your local ism install:
+You have to add a file in `$ISSM_DIR/src/m` entitled `andes_settings.m` with your personal settings on your local ISSM install:
 
-```sph
+```matlab
 cluster.login='yourNetID';
-cluster.codepath='/dartfs/rc/lab/I/ICE/yourpath/trunk-jpl/bin/';
-cluster.executionpath='/dartfs/rc/lab/I/ICE/yourpath/trunk-jpl/execution/';
+cluster.codepath='/Yourpath-to-ISSM-on-Andes/bin/';
+cluster.executionpath='/Yourpath-to-ISSM-on-Andes/execution/';
 ```
 
 use your NetID for the login and enter your code path and execution path. These settings will be picked up automatically by matlab when you do `md.cluster= andes()`

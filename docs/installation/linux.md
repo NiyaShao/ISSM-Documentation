@@ -46,17 +46,17 @@ where `<ISSM_PATH>` is the path to the copy of the ISSM source code that you che
 
 Install a basic package set with,
 ```sh
-sudo apt-get install build-essential gfortran libssl-dev
+sudo apt install build-essential gfortran libssl-dev
 ```
 
 If you will be installing the GDAL external package, install dependencies with,
 ```sh
-sudo apt-get install swig
+sudo apt install swig
 ```
 
 If you will be installing the PROJ external package, install dependencies with,
 ```sh
-sudo apt-get install libsqlite3-dev sqlite3
+sudo apt install libsqlite3-dev sqlite3
 ```
 
 **NOTE**: Some systems may require a link to be created so that the linker can find `libstdc++`, which can be accomplished with,
@@ -76,19 +76,19 @@ Download and install the desired version of MATLAB from the <a href="https://www
 
 Install Python 3 with,
 ```sh
-sudo apt-get install python3-minimal
+sudo apt install python3-minimal
 ```
 Install required Python 3 header files with,
 ```sh
-sudo apt-get install python3-dev
+sudo apt install python3-dev
 ```
 Install `venv` module with,
 ```sh
-sudo apt-get install python3-venv
+sudo apt install python3-venv
 ```
 Install pip with,
 ```sh
-sudo apt-get install python3-pip
+sudo apt install python3-pip
 ```
 Create a Python virtual environment for ISSM and activate it with,
 ```sh
@@ -105,16 +105,16 @@ source ${HOME}/.venv/ISSM/bin/activate
 
 Then, use pip to install NumPy, SciPy, and dependencies,
 ```sh
-pip install matplotlib netcdf4 nose numpy pyshp scipy
+pip install matplotlib netcdf4 nose numpy pyshp scipy setuptools wheel
 ```
 
 Alternatively, copy and paste the following to achieve all of the above,
 ```sh
-sudo apt-get install python3-dev python3-minimal python3-pip python3-venv
+sudo apt install python3-dev python3-minimal python3-pip python3-venv
 mkdir ${HOME}/.venv
 python3 -m venv ${HOME}/.venv/ISSM
 source ${HOME}/.venv/ISSM/bin/activate
-pip install matplotlib netcdf4 nose numpy pyshp scipy
+pip install matplotlib netcdf4 nose numpy pyshp scipy setuptools wheel
 ```
 
 ## External Packages
@@ -124,7 +124,6 @@ autotools		install-linux.sh
 cmake			install.sh
 petsc			install-3.22-linux.sh
 triangle		install-linux.sh
-m1qn3			install.sh
 ````
 
 {: .highlight-title }
@@ -163,8 +162,7 @@ Next, create a configuration file called `configure.sh` in `${ISSM_DIR}`. Its co
 	--with-scalapack-dir="${ISSM_DIR}/externalpackages/petsc/install" \
 	--with-mumps-dir="${ISSM_DIR}/externalpackages/petsc/install" \
 	--with-petsc-dir="${ISSM_DIR}/externalpackages/petsc/install" \
-	--with-triangle-dir="${ISSM_DIR}/externalpackages/triangle/install" \
-	--with-m1qn3-dir="${ISSM_DIR}/externalpackages/m1qn3/install"
+	--with-triangle-dir="${ISSM_DIR}/externalpackages/triangle/install"
 ```
 where `<MATLAB_PATH>` is the path to the MATLAB installation that you wish to use (e.g. `/usr/local/MATLAB/R2024a`).
 
@@ -182,8 +180,7 @@ where `<MATLAB_PATH>` is the path to the MATLAB installation that you wish to us
 	--with-scalapack-dir="${ISSM_DIR}/externalpackages/petsc/install" \
 	--with-mumps-dir="${ISSM_DIR}/externalpackages/petsc/install" \
 	--with-petsc-dir="${ISSM_DIR}/externalpackages/petsc/install" \
-	--with-triangle-dir="${ISSM_DIR}/externalpackages/triangle/install" \
-	--with-m1qn3-dir="${ISSM_DIR}/externalpackages/m1qn3/install"
+	--with-triangle-dir="${ISSM_DIR}/externalpackages/triangle/install"
 ```
 
 Again, you might need to make adjustments to the above configurations based on your system and needs. We have a number of resources to help here:

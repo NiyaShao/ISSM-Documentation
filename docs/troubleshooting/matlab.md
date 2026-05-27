@@ -1,11 +1,18 @@
 ---
-title: MATLAB Interface
+title: MATLAB
 layout: default
 parent: Troubleshooting
 nav_order: 4
 ---
 
 # MATLAB Interface
+
+## Table of Contents
+{: .no_toc }
+1. TOC
+{:toc}
+----
+
 ## MATLAB does not recognize any ISSM command
 ````
 >> md=model;
@@ -63,8 +70,8 @@ If this does not fix the problem, please search or post troubleshooting question
 ## MATLAB complains about missing \_\_gfortran\_transfer\_array\_write symbol
 In some cases, MATLAB complains about missing symbols in MEX files. That is due to the fact that MATLAB uses its own libraries that are not the ones you compiled the MEX files with. For example, you might have the following error message:
 ````
-Invalid MEX-file '/Users/rtwalker/ISSM/trunk/lib/TriMesh.mexmaci64':
-dlopen(/Users/rtwalker/ISSM/trunk/lib/TriMesh.mexmaci64, 6): Symbol not found:
+Invalid MEX-file '/Users/ISSM/lib/TriMesh.mexmaci64':
+dlopen(/Users/ISSM/lib/TriMesh.mexmaci64, 6): Symbol not found:
 __gfortran_transfer_array_write
 ````
 
@@ -260,7 +267,7 @@ Warning: Executing startup failed in matlabrc.
 This indicates a potentially serious problem in your MATLAB setup,
 which should be resolved as soon as possible.  Error detected was:
 MATLAB:m_illegal_reserved_keyword_usage
-Error: File: trunk/src/m/classes/qmu/normal_uncertain.m Line: 38
+Error: File: ISSM/src/m/classes/qmu/normal_uncertain.m Line: 38
 Column: 5
 Illegal use of reserved keyword "end".
 > In matlabrc at 220

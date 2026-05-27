@@ -1,5 +1,5 @@
 ---
-title: Elastostatic Adjustment Solution
+title: Elastostatic
 layout: default
 parent: Capabilities
 ---
@@ -52,3 +52,8 @@ The first argument is the model, the second is the nature of the simulation one 
 
 
 ## References
+- S. Adhikari, E. R. Ivins, and E. Larour.
+ Mass transport waves amplified by intense Greenland melt and
+   detected in solid Earth deformation.
+ Geophys. Res. Lett., 44(10):4965-4975, 2017.
+

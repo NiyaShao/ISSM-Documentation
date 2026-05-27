@@ -136,7 +136,6 @@ The following packages and installation scripts are recommended for a basic inst
 msmpi			install.sh
 petsc			install-3.14-win-msys2-mingw-msmpi.sh
 triangle		install-win-msys2-mingw.sh
-m1qn3			install-win-msys2-mingw.sh
 ````
 
 {: .highlight-title }
@@ -188,9 +187,7 @@ Next, create a configuration file called `configure.sh` in `${ISSM_DIR}`. Its co
 	--with-scalapack-dir="${ISSM_DIR}/externalpackages/petsc/install" \
 	--with-mumps-dir="${ISSM_DIR}/externalpackages/petsc/install" \
 	--with-petsc-dir="${ISSM_DIR}/externalpackages/petsc/install" \
-	--with-triangle-dir="${ISSM_DIR}/externalpackages/triangle/install" \
-	--with-m1qn3-dir="${ISSM_DIR}/externalpackages/m1qn3/install" \
-	--with-semic-dir="${ISSM_DIR}/externalpackages/semic/install"
+	--with-triangle-dir="${ISSM_DIR}/externalpackages/triangle/install"
 ````
 
 Again, you might need to make adjustments to the above configurations based on your system and needs. We have a number of resources to help here:

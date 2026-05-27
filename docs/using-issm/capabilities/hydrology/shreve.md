@@ -67,3 +67,14 @@ To run a simulation, use the following command:
 
 
 ## References
+- A. M. Le Brocq, A. J. Payne, M. J. Siegert, and R. B. Alley.
+ A subglacial water-flow model for West Antarctica.
+ J. Glaciol., 55(193):879-888, 2009.
+
+- R. L. Shreve.
+ Movement of water in glaciers.
+ J. Glaciol., 11(62):205-214, 1972.
+
+- J. Weertman.
+ On the sliding of glaciers.
+ J. Glaciol., 3:33-38, March 1957.

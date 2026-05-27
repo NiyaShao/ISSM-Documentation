@@ -1,5 +1,5 @@
 ---
-title: Modeling Jakobshavn Isbr&#230;
+title: Jakobshavn Isbr&#230;
 layout: default
 parent: Tutorials
 ---
@@ -39,7 +39,7 @@ In the first step, we create a triangle mesh with 2,000 meter resolution using t
 md = bamg(md, 'hmin', 1200, 'hmax', 15000, 'field', vel, 'err', 5);
 ````
 
-Go to `trunk/` and launch MATLAB and then go to `examples/Jakobshavn/`:
+Go to `ISSM/` and launch MATLAB and then go to `examples/Jakobshavn/`:
 ````
 $ cd ${ISSM_DIR}
 $ matlab

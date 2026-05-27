@@ -56,3 +56,23 @@ The first argument to `solve` is the model, the second is the nature of the simu
 
 
 ## References
+- G. Durand, O. Gagliardini, T. Zwinger, E. Le Meur, and R. C. A. Hindmarsh.
+ Full Stokes modeling of marine ice sheets: influence of the grid
+   size.
+ Ann. Glaciol., 50(52):109-114, 2009.
+
+- R. M. Gladstone, V. Lee, A. Vieli, and A. J. Payne.
+ Grounding line migration in an adaptive mesh ice sheet model.
+ J. Geophys. Res., 115:1-19, Oct 27 2010.
+
+- S. M. J. Nowicki and D. J. Wingham.
+ Conditions for a steady ice sheet-ice shelf junction.
+ Earth Planet. Sci. Lett., 265(1-2):246-255, JAN 15 2008.
+
+- F. Pattyn, A. Huyghe, S. De Brabander, and B. De Smedt.
+ Role of transition zones in marine ice sheet dynamics.
+ J. Geophys. Res. - Earth Surface, 111(F2):1-10, APR 26 2006.
+
+- H. Seroussi, M. Morlighem, E. Larour, E. Rignot, and A. Khazendar.
+ Hydrostatic grounding line parameterization in ice sheet models.
+ Cryosphere, 8(6):2075-2087, Nov. 2014.
