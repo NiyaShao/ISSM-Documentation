@@ -82,7 +82,8 @@ or Log out and log back in to apply this change.
 Installing ISSM on Andes
 Andes will only be used to run the code, you will use your local machine for pre and post-processing, you will never use Andes's MATLAB. You can check out ISSM and install the following packages:
 
-- PETSc 3.23 (use the andes script, `install-3.23-andes.sh`)
+- PETSc 3.21 (use the andes script, `install-3.21-andes.sh`)
+- m1qn3
 
 Use the following configuration script (adapt to your needs):
 
