@@ -103,6 +103,7 @@ sys.path.append(os.getenv('ISSM_DIR') + '/share')
 You can verify that ISSM is findable by running,
 ````
 from issmversion import issmversion
+issmversion()
 ````
 which should print a message similar to,
 ````
