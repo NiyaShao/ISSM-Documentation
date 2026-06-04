@@ -16,7 +16,7 @@ Please feel free to let us know how this documentation could be improved. We als
 ----
 
 ## Build Status
-![Ubuntu - Basic](https://github.com/ISSMteam/ISSM/actions/workflows/ubuntu-basic.yml/badge.svg)
+[![Ubuntu - Basic](https://github.com/ISSMteam/ISSM/actions/workflows/ubuntu-basic.yml/badge.svg)](https://github.com/ISSMteam/ISSM/actions/workflows/ubuntu-basic.yml)
 [![Ubuntu Python](https://github.com/ISSMteam/ISSM/actions/workflows/ubuntu-python.yml/badge.svg)](https://github.com/ISSMteam/ISSM/actions/workflows/ubuntu-python.yml)
 [![Ubuntu CodiPack](https://github.com/ISSMteam/ISSM/actions/workflows/ubuntu-codipack.yml/badge.svg)](https://github.com/ISSMteam/ISSM/actions/workflows/ubuntu-codipack.yml)
 
@@ -25,10 +25,10 @@ There are more build configurations and regression test suites on <a href="https
 ----
 
 ## Contact
-- ISSM source code GitHub repository
+- ISSM source code GitHub repository:
   - <a href="https://github.com/ISSMteam/ISSM/discussions" target="_blank">Discussions</a>
   - <a href="https://github.com/ISSMteam/ISSM/issues" target="_blank">Bug Reports</a>
-- <a href="https://github.com/ISSMteam/ISSM/discussions/113" target="_blank">ISSM Slack Workspace</a>
+  - <a href="https://github.com/ISSMteam/ISSM/discussions/113" target="_blank">ISSM Slack Workspace</a>
 
 ----
 
