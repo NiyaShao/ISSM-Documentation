@@ -58,7 +58,7 @@ The 'Publications' page and its corresponding content files and their structure 
 For more info, see `docs/publications/README`.
 
 ### News
-The 'News' page and posts rely on [Jekyll's built-in support for blogging]{https://jekyllrb.com/docs/posts/}.
+The 'News' page and posts rely on [Jekyll's built-in support for blogging](https://jekyllrb.com/docs/posts/).
 
 ## More In-depth Development
 Various components of the default presentation of the site can be overridden by adding custom files to the appropriate directories (which may not yet exist and need to be created).

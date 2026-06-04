@@ -9,7 +9,7 @@ nav_order: 1
 
 ----
 
-Welcome to the documentation page for the Ice-Sheet and Sea-level System Model (ISSM). Included here are instructions for installation and use of ISSM, development status and forecast, as well as information about how ISSM used and the team behind it.
+Welcome to the documentation page for the Ice-Sheet and Sea-level System Model (ISSM). Included here are instructions for installation and use of ISSM, development status and forecast, as well as information about how to use ISSM and the team behind it.
 
 Please feel free to let us know how this documentation could be improved. We also welcome contributions to the source code via fork and pull request.
 

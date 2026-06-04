@@ -90,7 +90,7 @@ In order to run Dakota with ISSM, you must compile and install the external pack
 In addition, your configure script should include the following:
 ````
 --with-chaco-dir=${ISSM_DIR}/externalpackages/chaco/install \
---with-dakota-dir=${ISSM_DIR}/externalpackages}/dakota/install \
+--with-dakota-dir=${ISSM_DIR}/externalpackages/dakota/install \
 ````
 
 More recent versions of Dakota also require the external package Boost (`${ISSM_DIR}/externalpackages/boost`). If installed, it should also be added to your configure script:

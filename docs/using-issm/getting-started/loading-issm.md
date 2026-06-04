@@ -15,7 +15,7 @@ First, we need to make sure our interface can find ISSM and its external package
 ```sh
 export ISSM_DIR=<ISSM_PATH>
 source ${ISSM_DIR}/etc/environment.sh
-````
+```
 
 `csh`
 ````
@@ -49,7 +49,7 @@ again, where `<ISSM_PATH>` is the path to ISSM on disk. Alternatively, you can u
 ````
 addpath <ISSM_PATH>/share
 ````
-Yet another alternative is to feel the `addpath` command as a statement to the `matlab` startup command, for example with,
+Yet another alternative is to feed the `addpath` command as a statement to the `matlab` startup command, for example with,
 ````
 matlab -r 'addpath ${ISSM_DIR}/bin ${ISSM_DIR}/lib'
 ````

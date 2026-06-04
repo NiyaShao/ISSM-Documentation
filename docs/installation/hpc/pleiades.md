@@ -136,7 +136,7 @@ autotools	install-linux.sh
 boost		install-1.7-linux.sh
 dakota		install-6.2-pleiades.sh
 chaco		install-linux.sh
-triangle	install-linux.shwhic
+triangle	install-linux.sh
 ```
 
 Before configuring ISSM, run,

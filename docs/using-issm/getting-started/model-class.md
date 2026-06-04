@@ -15,7 +15,7 @@ and in Python,
 from model import *
 md = model()
 ```
-This will create a new model named `md` whose class is `model`. The information contained in the model `md` is grouped by class, each of which are comprised of fields related to that particular aspect of the model (e.g. mesh, material properties, friction, stressbalance solution, solution results). When one creates a new model, all of these fields are empty or `NaN` (not a number), but `md` is ready to be used as a model. The list of these classes is displayed by running, in MATLAB,
+This will create a new model named `md` whose class is `model`. The information contained in the model `md` is grouped by class, each consisting of fields related to that particular aspect of the model (e.g. mesh, material properties, friction, stressbalance solution, solution results). When one creates a new model, all of these fields are empty or `NaN` (not a number), but `md` is ready to be used as a model. The list of these classes is displayed by running, in MATLAB,
 
 ```m
 >> md

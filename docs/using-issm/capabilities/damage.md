@@ -37,7 +37,7 @@ Damage can be calculated using an inverse control method in the same manner as a
 - `md.inversion.control_parameters = {'DamageDbar'}` (MATLAB)
 - `md.inversion.control_parameters = ['DamageDbar']` (Python)
 
-The remainder of the inversion procedure is described on the 
+The remainder of the inversion procedure is described
  on the <a href="../advanced/inversions">'Advanced Features' &#8594; 'Inversions' page</a>.
 This was the procedure followed by [<a href="#references">*Borstad2012*</a>] in determining the damage for the Larsen B ice shelf prior to its collapse (see the 
  <a href="../../publications">'Publications' page</a>

@@ -172,7 +172,7 @@ Same as standard <a href="http://www.mathworks.com/help/techdoc/ref/xlabel.html"
 ```
 ### Special plots
 #### basaldrag
-The special plot `'basal_drag'` displays the norm of the basal drag friction in kPa following formula:
+The special plot `'basal_drag'` displays the norm of the basal drag friction in kPa following the formula:
 
 <div align="center"><img src="https://latex.codecogs.com/svg.latex?
 \boldsymbol{\tau}_b = -k^2 N^r \|{\bf v}\|^{s-1} {\bf v}_b" alt="Equation 1"></div>
@@ -186,13 +186,13 @@ Basal drag relies on the velocity provided in `md.initialization`. The x and y c
 
 <div style="display:flow-root"><img style="float:left;width:50.00%" src="/ISSM-Documentation/assets/img/docs/using-issm/getting-started/plotting/matlab/basaldrag.png" alt="Figure 11: basaldrag"><img style="float:left;width:50.00%" src="/ISSM-Documentation/assets/img/docs/using-issm/getting-started/plotting/matlab/basaldragcomp.png" alt="Figure 11: basaldragcomp"></div><span style="display:block;width:100%;text-align:center"><small>Basal friction norm and Basal friction x-component</small></span>
 #### BC
-The special plot `'BC'` displays all boundary conditions (Newmann and Dirichlet) for 2D and 3D meshes:
+The special plot `'BC'` displays all boundary conditions (Neumann and Dirichlet) for 2D and 3D meshes:
 ```m
 >> plotmodel(md, 'data', 'BC')
 ```
 
 <div style="display:flow-root"><img style="float:left;" src="/ISSM-Documentation/assets/img/docs/using-issm/getting-started/plotting/matlab/BC.png" alt="Figure 12: BC"></div>#### driving\_stress
-The special plot `'driving_stress'` displays the basal drag friction in kPa following formula:
+The special plot `'driving_stress'` displays the driving stress in kPa following the formula:
 
 <div align="center"><img src="https://latex.codecogs.com/svg.latex?
 \boldsymbol{\tau}_d = \rho g H\;\nabla s\label{plotspecial_driving_stress}" alt="Equation 2"></div>

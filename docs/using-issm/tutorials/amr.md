@@ -36,7 +36,7 @@ plotmodel(md, 'data', md.geometry.surface, 'title', 'Initial Surface Elevation [
 
 <div style="display:flow-root"><img style="float:left;width:100.00%" src="/ISSM-Documentation/assets/img/docs/using-issm/tutorials/amr/amr_surface_initial.png" alt="Figure 2: amr_surface_initial"></div>
 ### Transient solution with AMR
-In step 3, we specify which machine we want to run the model on, including number of processors to be used, define the model time step, final time, and prescribe the AMR frequency, i.e, how often the mesh needs to be updated. In this example, we run 500 yr forward in time to track the grounding line movement as soon as the initial thin ice slab starts to grounded on the bedrock. The ice starts to grounded in x=0, the boundary of the ice divide (vx=0 at x=0). We set the AMR frequency equal to 1, what means that the mesh is update (refined/coarsen) very time step). In this example, a time step equal to 1 yr is imposed. The SSA equations are used as the flow model.
+In step 3, we specify which machine we want to run the model on, including number of processors to be used, define the model time step, final time, and prescribe the AMR frequency, i.e, how often the mesh needs to be updated. In this example, we run 500 yr forward in time to track the grounding line movement as soon as the initial thin ice slab starts to ground on the bedrock. The ice starts to ground at x=0, the boundary of the ice divide (vx=0 at x=0). We set the AMR frequency equal to 1, which means that the mesh is updated (refined/coarsened) every time step. In this example, a time step equal to 1 yr is imposed. The SSA equations are used as the flow model.
 
 Now that the set up is complete, we can run the model:
 ````
@@ -59,7 +59,7 @@ plotmodel(md, 'data', md.results.TransientSolution[-1].Surface, 'title', 'Surfac
 Here, we are plotting the mask grounded level set, which indicates if the ice is grounded (positive) or floating (negative). The value 0 indicates the position of the grounding line:
 ````
 finalstep = length(md.results.TransientSolution);
-plotmodel(md, 'data', md.results.TransientSolution(finalstep).MaskGroundediceLevelset, 'title', 'Mask Grounded [m]', 'amr', finalstep, 'xlim', [0 250000], 'caxis', [-150 100], 'fontsize', 12);
+plotmodel(md, 'data', md.results.TransientSolution(finalstep).MaskOceanLevelset, 'title', 'Mask Grounded [m]', 'amr', finalstep, 'xlim', [0 250000], 'caxis', [-150 100], 'fontsize', 12);
 ````
 or in Python:
 ````
@@ -88,5 +88,5 @@ plotmodel(md, 'data', 'mesh', 'amr', 0, 'xlim', [0, 250000], 'title', 't=1 yr', 
 <div style="display:flow-root"><img style="float:left;width:100.00%" src="/ISSM-Documentation/assets/img/docs/using-issm/tutorials/amr/amr_meshes.jpg" alt="Figure 5: amr_meshes"></div>
 To watch the evolution through time in an animation, we print the results and the respective meshes in .VTK-type file format, see the folder `<ISSM_DIR>/examples/AMR/`. These files can be seen using <a href="https://www.paraview.org/" target="_blank">ParaView</a>.
 
-In ParaView, you will select which result to animate, and can watch the mesh tracking the grounding line movement as soon as the ice starts to grounded on the bedrock. The result and the mesh can be simultaneously displayed using selecting `Surface With Edges` in the box next to the field/result box selection.
+In ParaView, you will select which result to animate, and can watch the mesh tracking the grounding line movement as soon as the ice starts to ground on the bedrock. The result and the mesh can be simultaneously displayed using selecting `Surface With Edges` in the box next to the field/result box selection.
 

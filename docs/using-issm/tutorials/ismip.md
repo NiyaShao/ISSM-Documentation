@@ -83,7 +83,7 @@ Load the `SetFlow` model. Dirichlet boundary condition are known as SPC's, where
 - Mesh size: 80,000 meters
 - Nodes in each direction: 20
 - All grounded: default
-- Ice-flow parameter: `B = 6.8067 x 10^6 Pa s^1/n`
+- Ice-flow parameter: `B = 6.8067 x 10^7 Pa s^1/n`
 - Glen's exponent: n = 3
 - 5 layer extrusion
 - Flow model: HO

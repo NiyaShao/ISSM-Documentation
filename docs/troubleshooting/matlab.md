@@ -31,7 +31,7 @@ but any library that MATLAB ships with could potentially cause a conflict. There
 ````
 !ldd <PATH_TO_MEX_FILE>
 ````
-in the MATLAB console to confirm that the cause is as described. After running the command, look through the resulting list of libraries for any that are loaded from the the MATLAB installation directory.
+in the MATLAB console to confirm that the cause is as described. After running the command, look through the resulting list of libraries for any that are loaded from the MATLAB installation directory.
 
 ### Option 1 (preferred)
 Locate your copy of the conflicting library and provide it to `LD_PRELOAD` before launching MATLAB. For example,

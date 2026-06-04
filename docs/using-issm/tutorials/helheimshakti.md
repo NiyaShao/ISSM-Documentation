@@ -16,7 +16,7 @@ parent: Tutorials
 ### Introduction
 In this example, the main goal is to set up a subglacial hydrology simulation using the SHAKTI model, coupled with ice velocity on a real Greenland outlet glacier. In order to build an operational simulation of Helheim Glacier as an example, we will follow these steps:
 
-- Load your Helheim Glacier model created in the `Modeling Helheim Glacier tutorial
+- Load your Helheim Glacier model created in the 'Modeling Helheim Glacier' tutorial
 - Set the hydrology model to SHAKTI and set up friction coupling
 - Set SHAKTI-specific hydrology parameters
 - Run a transient two-way coupled simulation with zero meltwater input to generate the winter base state drainage system
@@ -59,13 +59,13 @@ The model you have set up currently specifies zero meltwater inputs (`md.hydrolo
 
 You can examine the output spatially by plotting different quantities. For example, here are plots of velocity, effective pressure, basal water flux, and hydraulic head after 30 days:
 ````
-plotmodel(md, 'data', md.results.TransientSolution(end).Vel, 'title', 'Velocity (m/yr', ...
+plotmodel(md, 'data', md.results.TransientSolution(end).Vel, 'title', 'Velocity (m/yr)', ...
 	'data', md.results.TransientSolution(end).EffectivePressure, 'title', 'Effective Pressure (Pa)')
 ````
 
 <div style="display:flow-root"><img style="float:left;width:100.00%" src="/ISSM-Documentation/assets/img/docs/using-issm/tutorials/helheimshakti/figure_vel_N.png" alt="Figure 1: figure_vel_N"></div>
 ````
-plotmodel(md, 'data', log10(md.results.TransientSolution(end).HydrologyBasalFlux, 'title', 'log_{10}(Basal Water Flux) (m^2 s^{-1})', ...
+plotmodel(md, 'data', log10(md.results.TransientSolution(end).HydrologyBasalFlux), 'title', 'log_{10}(Basal Water Flux) (m^2 s^{-1})', ...
 	'data', md.results.TransientSolution(end).HydrologyHead, 'title', 'Head (m)')
 ````
 

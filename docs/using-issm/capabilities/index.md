@@ -19,7 +19,7 @@ has_toc: false
    - <a href="hydrology/dc">Dual Continuum Porous Equivalent Approach</a>
    - <a href="hydrology/glads">GlaDS</a>
    - <a href="hydrology/shakti">SHAKTI</a>
-   - <a href="hydrology/shreve">Mesh Generation</a>
+   - <a href="hydrology/shreve">Shreve Approximation</a>
  - <a href="damage">Damage Mechanics</a>
  - <a href="transient">Transient Solution</a>
  - <a href="grounding-lines">Grounding Line Migration</a>

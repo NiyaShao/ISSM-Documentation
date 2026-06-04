@@ -9,7 +9,7 @@ nav_order: 2
 There are many strategies for managing SSH connections that can help to reduce repeated actions and the amount of details that you have to remember.
 
 ### Aliases
-Entries in `~/.ssh/config` (and `/etc/ssh/ssh_config`) allow you to For example, let's say you typically manually connect to a remote machine with,
+Entries in `~/.ssh/config` (and `/etc/ssh/ssh_config`) allow you to define reusable shortcuts for your SSH connections. For example, let's say you typically manually connect to a remote machine with,
 ````
 ssh <USER>@<HOST>
 ````
@@ -28,7 +28,7 @@ Likewise, you can create shell aliases that offer the same reusability and time 
 ````
 alias ssh-<ALIAS>="ssh <USER>@<HOST>"
 ````
-which would you to log in to the remote machine with, simply,
+which would let you log in to the remote machine with, simply,
 ````
 ssh-<ALIAS>
 ````

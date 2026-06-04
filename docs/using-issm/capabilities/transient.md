@@ -56,7 +56,7 @@ The parameters relevant to the time stepping can be displayed by running:
 
 
 - `md.timestepping.start_time`: simulation starting time (year)
-- `md.timestepping.final_start`: final time to stop the simulation (year)
+- `md.timestepping.final_time`: final time to stop the simulation (year)
 - `md.timestepping.time_step`: length of time steps (year)
 - `md.timestepping.time_adapt`: to indicate if the CFL condition is used to define time step?
 - `md.timestepping.cfl_coefficient`: coefficient applied to cfl condition

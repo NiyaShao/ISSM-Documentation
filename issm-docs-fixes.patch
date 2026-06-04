@@ -1,0 +1,329 @@
+ISSM-Documentation: typo and error fixes
+=========================================
+Apply from inside the ISSM-Documentation/ directory with either:
+    git apply issm-docs-fixes.patch
+    patch -p1 < issm-docs-fixes.patch
+
+Files touched (16):
+  docs/README.md                                  broken News link syntax {} -> ()
+  docs/installation/windows.md                    "capabiltites" -> "capabilities"
+  docs/installation/hpc/pleiades.md               stray "whic" on triangle script line
+  docs/supplements/ssh.md                         two broken/incomplete sentences
+  docs/troubleshooting/matlab.md                  doubled "the the"
+  docs/using-issm/getting-started/loading-issm.md "feel" -> "feed"; mismatched code fence
+  docs/using-issm/getting-started/plotting/matlab.md  "Newmann" -> "Neumann"; driving_stress
+                                                  description (was "basal drag"); "following formula"
+  docs/using-issm/capabilities/index.md           Shreve link text "Mesh Generation" -> "Shreve Approximation"
+  docs/using-issm/capabilities/transient.md       md.timestepping.final_start -> final_time
+  docs/using-issm/capabilities/damage.md          doubled "on the"
+  docs/using-issm/parameterization/estar.md       "than" -> "that"
+  docs/using-issm/miscellaneous/codeguidelines.md invalid C for-loops; "flase"; missing
+                                                  semicolons; "fetween"; malformed PEP links
+  docs/using-issm/advanced/qmu-dakota.md          stray "}" in configure example
+  docs/using-issm/tutorials/amr.md                MaskGroundediceLevelset -> MaskOceanLevelset;
+                                                  "to grounded"/"update"/"very"/"what" grammar
+  docs/using-issm/tutorials/ismip.md              B = 10^6 -> 10^7 typo (BC section)
+  docs/using-issm/tutorials/helheimshakti.md      two unbalanced parens; unclosed backtick
+
+Not included (judgment calls / needs author verification): "consists in" phrasing,
+'AgressiveMigration' spelling, macOS page's Linux apt commands & "on Linux" label,
+advanced.md swapped Linux/macOS solid-earth script lists, empty IsmipA.py solution block,
+moulin_inputs vs moulin_input field name.
+--- a/docs/README.md
++++ b/docs/README.md
+@@ -58,7 +58,7 @@
+ For more info, see `docs/publications/README`.
+ 
+ ### News
+-The 'News' page and posts rely on [Jekyll's built-in support for blogging]{https://jekyllrb.com/docs/posts/}.
++The 'News' page and posts rely on [Jekyll's built-in support for blogging](https://jekyllrb.com/docs/posts/).
+ 
+ ## More In-depth Development
+ Various components of the default presentation of the site can be overridden by adding custom files to the appropriate directories (which may not yet exist and need to be created).
+--- a/docs/supplements/ssh.md
++++ b/docs/supplements/ssh.md
+@@ -9,7 +9,7 @@
+ There are many strategies for managing SSH connections that can help to reduce repeated actions and the amount of details that you have to remember.
+ 
+ ### Aliases
+-Entries in `~/.ssh/config` (and `/etc/ssh/ssh_config`) allow you to For example, let's say you typically manually connect to a remote machine with,
++Entries in `~/.ssh/config` (and `/etc/ssh/ssh_config`) allow you to define reusable shortcuts for your SSH connections. For example, let's say you typically manually connect to a remote machine with,
+ ````
+ ssh <USER>@<HOST>
+ ````
+@@ -28,7 +28,7 @@
+ ````
+ alias ssh-<ALIAS>="ssh <USER>@<HOST>"
+ ````
+-which would you to log in to the remote machine with, simply,
++which would let you log in to the remote machine with, simply,
+ ````
+ ssh-<ALIAS>
+ ````
+--- a/docs/troubleshooting/matlab.md
++++ b/docs/troubleshooting/matlab.md
+@@ -31,7 +31,7 @@
+ ````
+ !ldd <PATH_TO_MEX_FILE>
+ ````
+-in the MATLAB console to confirm that the cause is as described. After running the command, look through the resulting list of libraries for any that are loaded from the the MATLAB installation directory.
++in the MATLAB console to confirm that the cause is as described. After running the command, look through the resulting list of libraries for any that are loaded from the MATLAB installation directory.
+ 
+ ### Option 1 (preferred)
+ Locate your copy of the conflicting library and provide it to `LD_PRELOAD` before launching MATLAB. For example,
+--- a/docs/installation/hpc/pleiades.md
++++ b/docs/installation/hpc/pleiades.md
+@@ -136,7 +136,7 @@
+ boost		install-1.7-linux.sh
+ dakota		install-6.2-pleiades.sh
+ chaco		install-linux.sh
+-triangle	install-linux.shwhic
++triangle	install-linux.sh
+ ```
+ 
+ Before configuring ISSM, run,
+--- a/docs/installation/windows.md
++++ b/docs/installation/windows.md
+@@ -14,7 +14,7 @@
+ {: .highlight-title }
+ > Note
+ >
+-> - ISSM is currently limited to basic capabilities on Windows. We will be working soon on supporting external packages such as Dakota and advanced capabiltites like modelling of solid earth processes.
++> - ISSM is currently limited to basic capabilities on Windows. We will be working soon on supporting external packages such as Dakota and advanced capabilities like modelling of solid earth processes.
+ > - Currently, only the MATLAB interface to ISSM is supported on Windows.
+ 
+ After downloading the distributable, unpack it with the 'Extract' feature and move it to the desired location on disk.
+--- a/docs/using-issm/parameterization/estar.md
++++ b/docs/using-issm/parameterization/estar.md
+@@ -6,7 +6,7 @@
+ 
+ ## Empirical Scalar Tertiary Anisotropy Regime (ESTAR)
+ ### Description
+-The ESTAR (Empirical Scalar Tertiary Anisotropy Regime) flow relation [<a href="#references">*Budd2013,Graham2018*</a>] is a generalized constitutive relation for polycrystalline ice in steady-state (tertiary) flow. It is a scalar power law formulation based on tertiary creep rates from laboratory experiments of ice deformation under a variety of simple shear and compression stresses. While mathematically isotropic, the ESTAR flow relation describes the deformation of ice with a flow-compatible induced anisotropy &#8212; i.e. ice that has a developed anisotropic fabric that is a function of the underlying stress regime (i.e. the relative proportion of simple shear and compression stresses). The origins of ESTAR, including the laboratory experiments than contributed to its development, its derivation, and underlying assumptions are discussed in [<a href="#references">*Budd2013*</a>] and [<a href="#references">*Graham2018*</a>].
++The ESTAR (Empirical Scalar Tertiary Anisotropy Regime) flow relation [<a href="#references">*Budd2013,Graham2018*</a>] is a generalized constitutive relation for polycrystalline ice in steady-state (tertiary) flow. It is a scalar power law formulation based on tertiary creep rates from laboratory experiments of ice deformation under a variety of simple shear and compression stresses. While mathematically isotropic, the ESTAR flow relation describes the deformation of ice with a flow-compatible induced anisotropy &#8212; i.e. ice that has a developed anisotropic fabric that is a function of the underlying stress regime (i.e. the relative proportion of simple shear and compression stresses). The origins of ESTAR, including the laboratory experiments that contributed to its development, its derivation, and underlying assumptions are discussed in [<a href="#references">*Budd2013*</a>] and [<a href="#references">*Graham2018*</a>].
+ 
+ #### Equations
+ Ice is treated as a purely viscous incompressible material [<a href="#references">*Cuffey2010*</a>], such that its material constitutive relation can be written:
+--- a/docs/using-issm/miscellaneous/codeguidelines.md
++++ b/docs/using-issm/miscellaneous/codeguidelines.md
+@@ -15,14 +15,14 @@
+ ## C/C++
+ 
+ - if/for should follow this:
+-- no space fetween if/for and its statement
++- no space between if/for and its statement
+ - If an if/for holds on one line, then do not use brackets
+ - Otherwise, use brackets
+ 
+ ```c
+-for(int i=0<i<n;i++)  A[i]=i;
++for(int i=0;i<n;i++)  A[i]=i;
+ 
+-for(int i=0<i<n;i++){
++for(int i=0;i<n;i++){
+    A[i]=B[i];
+    B[i]=0;
+ }
+@@ -32,16 +32,16 @@
+ if(a==0)
+    bool=true;
+ else if(a==1)
+-   bool=flase;
++   bool=false;
+ else
+    _error_("a=" << a << " not supported");
+ 
+ if(a==0){
+     output=true;
+-    c=b
++    c=b;
+ }
+ else{
+-    output=false
++    output=false;
+     c=a;
+ }
+ ```
+@@ -50,7 +50,7 @@
+ 
+ ```c
+    /*Assigning values of A*/
+-   for(int i=0<i<n;i++){
++   for(int i=0;i<n;i++){
+ 
+       /*The comment here is indented*/
+       A[i]=i;
+@@ -107,7 +107,7 @@
+ 
+ ## Python
+ 
+-[PeP8 compliance](https://www.python.org/dev/peps/pep-0008/ PeP8 compliance) should be used throughout the code with the exceptions below (with flake8 codes):
++[PEP 8 compliance](https://www.python.org/dev/peps/pep-0008/) should be used throughout the code with the exceptions below (with flake8 codes):
+ - We allow lines of any length (E501)
+ - We don't enforce the space after "#" for comments (E262, E265)
+ - We still allow form module import * (F403) but we should avoid those if possible
+@@ -121,7 +121,7 @@
+ ```
+ 
+ ## Docstrings
+-Adhering to [https://www.python.org/dev/peps/pep-0257/ PEP8 Docstring Conventions] while attempting to mirror the conventions we follow under MATLAB, modules, functions, classes, and method definitions should be documented according to the following protocol:
++Adhering to [PEP 257 Docstring Conventions](https://www.python.org/dev/peps/pep-0257/) while attempting to mirror the conventions we follow under MATLAB, modules, functions, classes, and method definitions should be documented according to the following protocol:
+ 
+ ```py
+ def FunctionName(inputs):
+--- a/docs/using-issm/tutorials/helheimshakti.md
++++ b/docs/using-issm/tutorials/helheimshakti.md
+@@ -16,7 +16,7 @@
+ ### Introduction
+ In this example, the main goal is to set up a subglacial hydrology simulation using the SHAKTI model, coupled with ice velocity on a real Greenland outlet glacier. In order to build an operational simulation of Helheim Glacier as an example, we will follow these steps:
+ 
+-- Load your Helheim Glacier model created in the `Modeling Helheim Glacier tutorial
++- Load your Helheim Glacier model created in the 'Modeling Helheim Glacier' tutorial
+ - Set the hydrology model to SHAKTI and set up friction coupling
+ - Set SHAKTI-specific hydrology parameters
+ - Run a transient two-way coupled simulation with zero meltwater input to generate the winter base state drainage system
+@@ -59,13 +59,13 @@
+ 
+ You can examine the output spatially by plotting different quantities. For example, here are plots of velocity, effective pressure, basal water flux, and hydraulic head after 30 days:
+ ````
+-plotmodel(md, 'data', md.results.TransientSolution(end).Vel, 'title', 'Velocity (m/yr', ...
++plotmodel(md, 'data', md.results.TransientSolution(end).Vel, 'title', 'Velocity (m/yr)', ...
+ 	'data', md.results.TransientSolution(end).EffectivePressure, 'title', 'Effective Pressure (Pa)')
+ ````
+ 
+ <div style="display:flow-root"><img style="float:left;width:100.00%" src="/ISSM-Documentation/assets/img/docs/using-issm/tutorials/helheimshakti/figure_vel_N.png" alt="Figure 1: figure_vel_N"></div>
+ ````
+-plotmodel(md, 'data', log10(md.results.TransientSolution(end).HydrologyBasalFlux, 'title', 'log_{10}(Basal Water Flux) (m^2 s^{-1})', ...
++plotmodel(md, 'data', log10(md.results.TransientSolution(end).HydrologyBasalFlux), 'title', 'log_{10}(Basal Water Flux) (m^2 s^{-1})', ...
+ 	'data', md.results.TransientSolution(end).HydrologyHead, 'title', 'Head (m)')
+ ````
+ 
+--- a/docs/using-issm/tutorials/amr.md
++++ b/docs/using-issm/tutorials/amr.md
+@@ -36,7 +36,7 @@
+ 
+ <div style="display:flow-root"><img style="float:left;width:100.00%" src="/ISSM-Documentation/assets/img/docs/using-issm/tutorials/amr/amr_surface_initial.png" alt="Figure 2: amr_surface_initial"></div>
+ ### Transient solution with AMR
+-In step 3, we specify which machine we want to run the model on, including number of processors to be used, define the model time step, final time, and prescribe the AMR frequency, i.e, how often the mesh needs to be updated. In this example, we run 500 yr forward in time to track the grounding line movement as soon as the initial thin ice slab starts to grounded on the bedrock. The ice starts to grounded in x=0, the boundary of the ice divide (vx=0 at x=0). We set the AMR frequency equal to 1, what means that the mesh is update (refined/coarsen) very time step). In this example, a time step equal to 1 yr is imposed. The SSA equations are used as the flow model.
++In step 3, we specify which machine we want to run the model on, including number of processors to be used, define the model time step, final time, and prescribe the AMR frequency, i.e, how often the mesh needs to be updated. In this example, we run 500 yr forward in time to track the grounding line movement as soon as the initial thin ice slab starts to ground on the bedrock. The ice starts to ground at x=0, the boundary of the ice divide (vx=0 at x=0). We set the AMR frequency equal to 1, which means that the mesh is updated (refined/coarsened) every time step. In this example, a time step equal to 1 yr is imposed. The SSA equations are used as the flow model.
+ 
+ Now that the set up is complete, we can run the model:
+ ````
+@@ -59,7 +59,7 @@
+ Here, we are plotting the mask grounded level set, which indicates if the ice is grounded (positive) or floating (negative). The value 0 indicates the position of the grounding line:
+ ````
+ finalstep = length(md.results.TransientSolution);
+-plotmodel(md, 'data', md.results.TransientSolution(finalstep).MaskGroundediceLevelset, 'title', 'Mask Grounded [m]', 'amr', finalstep, 'xlim', [0 250000], 'caxis', [-150 100], 'fontsize', 12);
++plotmodel(md, 'data', md.results.TransientSolution(finalstep).MaskOceanLevelset, 'title', 'Mask Grounded [m]', 'amr', finalstep, 'xlim', [0 250000], 'caxis', [-150 100], 'fontsize', 12);
+ ````
+ or in Python:
+ ````
+@@ -88,5 +88,5 @@
+ <div style="display:flow-root"><img style="float:left;width:100.00%" src="/ISSM-Documentation/assets/img/docs/using-issm/tutorials/amr/amr_meshes.jpg" alt="Figure 5: amr_meshes"></div>
+ To watch the evolution through time in an animation, we print the results and the respective meshes in .VTK-type file format, see the folder `<ISSM_DIR>/examples/AMR/`. These files can be seen using <a href="https://www.paraview.org/" target="_blank">ParaView</a>.
+ 
+-In ParaView, you will select which result to animate, and can watch the mesh tracking the grounding line movement as soon as the ice starts to grounded on the bedrock. The result and the mesh can be simultaneously displayed using selecting `Surface With Edges` in the box next to the field/result box selection.
++In ParaView, you will select which result to animate, and can watch the mesh tracking the grounding line movement as soon as the ice starts to ground on the bedrock. The result and the mesh can be simultaneously displayed using selecting `Surface With Edges` in the box next to the field/result box selection.
+ 
+--- a/docs/using-issm/tutorials/ismip.md
++++ b/docs/using-issm/tutorials/ismip.md
+@@ -83,7 +83,7 @@
+ - Mesh size: 80,000 meters
+ - Nodes in each direction: 20
+ - All grounded: default
+-- Ice-flow parameter: `B = 6.8067 x 10^6 Pa s^1/n`
++- Ice-flow parameter: `B = 6.8067 x 10^7 Pa s^1/n`
+ - Glen's exponent: n = 3
+ - 5 layer extrusion
+ - Flow model: HO
+--- a/docs/using-issm/capabilities/damage.md
++++ b/docs/using-issm/capabilities/damage.md
+@@ -37,7 +37,7 @@
+ - `md.inversion.control_parameters = {'DamageDbar'}` (MATLAB)
+ - `md.inversion.control_parameters = ['DamageDbar']` (Python)
+ 
+-The remainder of the inversion procedure is described on the 
++The remainder of the inversion procedure is described
+  on the <a href="../advanced/inversions">'Advanced Features' &#8594; 'Inversions' page</a>.
+ This was the procedure followed by [<a href="#references">*Borstad2012*</a>] in determining the damage for the Larsen B ice shelf prior to its collapse (see the 
+  <a href="../../publications">'Publications' page</a>
+--- a/docs/using-issm/capabilities/transient.md
++++ b/docs/using-issm/capabilities/transient.md
+@@ -56,7 +56,7 @@
+ 
+ 
+ - `md.timestepping.start_time`: simulation starting time (year)
+-- `md.timestepping.final_start`: final time to stop the simulation (year)
++- `md.timestepping.final_time`: final time to stop the simulation (year)
+ - `md.timestepping.time_step`: length of time steps (year)
+ - `md.timestepping.time_adapt`: to indicate if the CFL condition is used to define time step?
+ - `md.timestepping.cfl_coefficient`: coefficient applied to cfl condition
+--- a/docs/using-issm/capabilities/index.md
++++ b/docs/using-issm/capabilities/index.md
+@@ -19,7 +19,7 @@
+    - <a href="hydrology/dc">Dual Continuum Porous Equivalent Approach</a>
+    - <a href="hydrology/glads">GlaDS</a>
+    - <a href="hydrology/shakti">SHAKTI</a>
+-   - <a href="hydrology/shreve">Mesh Generation</a>
++   - <a href="hydrology/shreve">Shreve Approximation</a>
+  - <a href="damage">Damage Mechanics</a>
+  - <a href="transient">Transient Solution</a>
+  - <a href="grounding-lines">Grounding Line Migration</a>
+--- a/docs/using-issm/getting-started/loading-issm.md
++++ b/docs/using-issm/getting-started/loading-issm.md
+@@ -15,7 +15,7 @@
+ ```sh
+ export ISSM_DIR=<ISSM_PATH>
+ source ${ISSM_DIR}/etc/environment.sh
+-````
++```
+ 
+ `csh`
+ ````
+@@ -49,7 +49,7 @@
+ ````
+ addpath <ISSM_PATH>/share
+ ````
+-Yet another alternative is to feel the `addpath` command as a statement to the `matlab` startup command, for example with,
++Yet another alternative is to feed the `addpath` command as a statement to the `matlab` startup command, for example with,
+ ````
+ matlab -r 'addpath ${ISSM_DIR}/bin ${ISSM_DIR}/lib'
+ ````
+--- a/docs/using-issm/getting-started/plotting/matlab.md
++++ b/docs/using-issm/getting-started/plotting/matlab.md
+@@ -172,7 +172,7 @@
+ ```
+ ### Special plots
+ #### basaldrag
+-The special plot `'basal_drag'` displays the norm of the basal drag friction in kPa following formula:
++The special plot `'basal_drag'` displays the norm of the basal drag friction in kPa following the formula:
+ 
+ <div align="center"><img src="https://latex.codecogs.com/svg.latex?
+ \boldsymbol{\tau}_b = -k^2 N^r \|{\bf v}\|^{s-1} {\bf v}_b" alt="Equation 1"></div>
+@@ -186,13 +186,13 @@
+ 
+ <div style="display:flow-root"><img style="float:left;width:50.00%" src="/ISSM-Documentation/assets/img/docs/using-issm/getting-started/plotting/matlab/basaldrag.png" alt="Figure 11: basaldrag"><img style="float:left;width:50.00%" src="/ISSM-Documentation/assets/img/docs/using-issm/getting-started/plotting/matlab/basaldragcomp.png" alt="Figure 11: basaldragcomp"></div><span style="display:block;width:100%;text-align:center"><small>Basal friction norm and Basal friction x-component</small></span>
+ #### BC
+-The special plot `'BC'` displays all boundary conditions (Newmann and Dirichlet) for 2D and 3D meshes:
++The special plot `'BC'` displays all boundary conditions (Neumann and Dirichlet) for 2D and 3D meshes:
+ ```m
+ >> plotmodel(md, 'data', 'BC')
+ ```
+ 
+ <div style="display:flow-root"><img style="float:left;" src="/ISSM-Documentation/assets/img/docs/using-issm/getting-started/plotting/matlab/BC.png" alt="Figure 12: BC"></div>#### driving\_stress
+-The special plot `'driving_stress'` displays the basal drag friction in kPa following formula:
++The special plot `'driving_stress'` displays the driving stress in kPa following the formula:
+ 
+ <div align="center"><img src="https://latex.codecogs.com/svg.latex?
+ \boldsymbol{\tau}_d = \rho g H\;\nabla s\label{plotspecial_driving_stress}" alt="Equation 2"></div>
+--- a/docs/using-issm/advanced/qmu-dakota.md
++++ b/docs/using-issm/advanced/qmu-dakota.md
+@@ -90,7 +90,7 @@
+ In addition, your configure script should include the following:
+ ````
+ --with-chaco-dir=${ISSM_DIR}/externalpackages/chaco/install \
+---with-dakota-dir=${ISSM_DIR}/externalpackages}/dakota/install \
++--with-dakota-dir=${ISSM_DIR}/externalpackages/dakota/install \
+ ````
+ 
+ More recent versions of Dakota also require the external package Boost (`${ISSM_DIR}/externalpackages/boost`). If installed, it should also be added to your configure script:

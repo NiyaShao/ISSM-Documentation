@@ -15,14 +15,14 @@ grand_parent: Using ISSM
 ## C/C++
 
 - if/for should follow this:
-- no space fetween if/for and its statement
+- no space between if/for and its statement
 - If an if/for holds on one line, then do not use brackets
 - Otherwise, use brackets
 
 ```c
-for(int i=0<i<n;i++)  A[i]=i;
+for(int i=0;i<n;i++)  A[i]=i;
 
-for(int i=0<i<n;i++){
+for(int i=0;i<n;i++){
    A[i]=B[i];
    B[i]=0;
 }
@@ -32,16 +32,16 @@ if(a==0) bool=true;
 if(a==0)
    bool=true;
 else if(a==1)
-   bool=flase;
+   bool=false;
 else
    _error_("a=" << a << " not supported");
 
 if(a==0){
     output=true;
-    c=b
+    c=b;
 }
 else{
-    output=false
+    output=false;
     c=a;
 }
 ```
@@ -50,7 +50,7 @@ else{
 
 ```c
    /*Assigning values of A*/
-   for(int i=0<i<n;i++){
+   for(int i=0;i<n;i++){
 
       /*The comment here is indented*/
       A[i]=i;
@@ -107,7 +107,7 @@ end % }}}
 
 ## Python
 
-[PeP8 compliance](https://www.python.org/dev/peps/pep-0008/ PeP8 compliance) should be used throughout the code with the exceptions below (with flake8 codes):
+[PEP 8 compliance](https://www.python.org/dev/peps/pep-0008/) should be used throughout the code with the exceptions below (with flake8 codes):
 - We allow lines of any length (E501)
 - We don't enforce the space after "#" for comments (E262, E265)
 - We still allow form module import * (F403) but we should avoid those if possible
@@ -121,7 +121,7 @@ flake8  --ignore=E262,E265,F403,F405,E405,E501
 ```
 
 ## Docstrings
-Adhering to [https://www.python.org/dev/peps/pep-0257/ PEP8 Docstring Conventions] while attempting to mirror the conventions we follow under MATLAB, modules, functions, classes, and method definitions should be documented according to the following protocol:
+Adhering to [PEP 257 Docstring Conventions](https://www.python.org/dev/peps/pep-0257/) while attempting to mirror the conventions we follow under MATLAB, modules, functions, classes, and method definitions should be documented according to the following protocol:
 
 ```py
 def FunctionName(inputs):

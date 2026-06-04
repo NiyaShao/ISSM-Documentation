@@ -14,7 +14,7 @@ The quickest way to get started with ISSM is to download one of our precompiled 
 {: .highlight-title }
 > Note
 >
-> - ISSM is currently limited to basic capabilities on Windows. We will be working soon on supporting external packages such as Dakota and advanced capabiltites like modelling of solid earth processes.
+> - ISSM is currently limited to basic capabilities on Windows. We will be working soon on supporting external packages such as Dakota and advanced capabilities like modelling of solid earth processes.
 > - Currently, only the MATLAB interface to ISSM is supported on Windows.
 
 After downloading the distributable, unpack it with the 'Extract' feature and move it to the desired location on disk.
