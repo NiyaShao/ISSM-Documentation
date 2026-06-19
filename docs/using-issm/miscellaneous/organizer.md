@@ -5,13 +5,13 @@ parent: Miscellaneous wiki
 grand_parent: Using ISSM
 ---
 
-## organizer
+## ISSM Organizer
 
 ISSM organizer is a module that supports automatic saving and loading of multiple runs as (.md) files. It can save and load each step of constructing a model and organize multiple ISSM models in bulk. Utilizing this structure modularizes the steps used to create a model, meaning you can start from any step while ensuring your previous steps remain saved.
 
-### initiating an organizer
+### Initiating an organizer
 
-We start by creating an instance of the `organizer` class. For example, the following code builds an organizer instance, where the model files will be stored in the './Models/' folder with `prefix` ‘AGU2015’ in the filename. The `prefix` can be used to conveniently organize different ISSM models. The `steps` input accepts a list of numerical id that tells the organizer which steps to run.
+You can start by creating an instance of the `organizer` class. For example, the following code builds an organizer instance, where the model files will be stored in the './Models/' folder with `prefix` ‘AGU2015’ in the filename. The `prefix` can be used to conveniently organize different ISSM models. The `steps` input accepts a list of numerical id that tells the organizer which steps to run.
 
 ```
 >> org = organizer('repository',['Models/'],...
@@ -20,7 +20,7 @@ We start by creating an instance of the `organizer` class. For example, the foll
 %build an empty organizer object with a given repository
 ```
 
-To check the current state of `org`, the `disp()` function can be used. For example, `disp(org)` immediately after creating the above organizer will results in the following output
+To check the current state of `org`, the `disp()` function can be used. For example, calling `disp(org)` immediately after creating the above organizer will results in the following output
 
 ```
 >> disp(org)                                        
@@ -31,13 +31,15 @@ To check the current state of `org`, the `disp()` function can be used. For exam
    no step
 ```
 
-### Organizing steps in a model run
+### Organizing steps in constructing an ISSM model
 
 After the organizer is created, it can associate step names (strings) to each id in the `steps` array.
 
-To perform a step in the model using an organizer, call the function `perform`. The `perform` function will take in the organizer and a string as the name of the step. The function will advance the current step ID by 1 and associate the step name with this ID. If the current step ID doesn’t exist, then the current step ID will be set to 1, and ID 1 will be associated with the step name. The function will return true if 
-- the step name has not been used in any `perform` functions before, and
-- the `steps` array used to create the organizer contains the step ID.
+To set up the model using an organizer, call the `perform` function with two arguments: the organizer and the step's name (a string). When called, `perform(org, step_name)` increments the current step ID by 1 and associates the provided step name (a string) with that ID. If no current step ID exists yet, it initializes the current step ID to 1 and associates the provided step name with ID 1.
+
+The function returns true only if both of the following conditions are met:
+- The step name has never been used in a previous call to perform.
+- The organizer's steps array (provided when the organizer was created) contains the assigned step ID.
 
 For example, the following code will map id 1 to string 'Mesh'. If the `steps` array used to create the organizer contains 1, then `perform(org, ‘Mesh’)` will return True, and the code inside the if block will be performed. If the `steps` does not contain 1, then the code will be skipped.
 
